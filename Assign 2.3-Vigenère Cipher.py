@@ -58,4 +58,5 @@ import fontstyle
 message_color = fontstyle.apply(message, 'BLUE/WHITE_BG')
 encrypted_message_color = fontstyle.apply(encrypted_message, 'BLUE/WHITE_BG')
 # Print the output with color
-
+print("Original message:", message_color)
+print("Encrypted message: ", encrypted_message_color)
