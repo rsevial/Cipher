@@ -53,6 +53,7 @@ message = input("Enter a message in uppercase letter with no spaces:")
 key = input("Enter a keyword in uppercase letter with no spaces:")
 encrypted_message = encrypt(message, key)
 # Import module
+import fontstyle
 # Format massage and key
 # Print the output with color
 
