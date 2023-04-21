@@ -14,7 +14,8 @@ def pad_key(message, key):
         # Else, ignore and append as empty
         else:
             padded_key += ' '
-    # Return padded_key                
+    # Return padded_key          
+    return padded_key        
 
 # Implement encrypt character method
 # Check if the message is alpha and is an uppercase letter
