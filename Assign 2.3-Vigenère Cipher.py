@@ -20,10 +20,15 @@ def pad_key(message, key):
 # Implement encrypt character method
 def encrypt_char(message_char, key_char, mode='encrypt'):
 # Check if the message is alpha and is an uppercase letter
+# If Alphabet letter
     if message_char.isalpha():
         # Define as "a"
         alphabet_letter = "a"
+        # If uppercase letter
+        if message_char.isupper():
             # Define as "A"
+            alphabet_letter = "A"
+
 
 # Find the position of the message's char in alphabet
 # Find the  position of the key's char in alphabet
