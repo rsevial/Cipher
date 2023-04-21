@@ -37,7 +37,9 @@ def encrypt_char(message_char, key_char, mode='encrypt'):
         if mode == 'encrypt':
             new_message_position = (old_message_position + key_position) % 26
         # Return char
+        return chr(new_message_position + ord(alphabet_letter))
     # If not, return message_char
+    return message_char
 
 # Implement encrypt method
 # Ask the user to input a message and key to encrypt
