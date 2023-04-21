@@ -18,6 +18,7 @@ def pad_key(message, key):
     return padded_key        
 
 # Implement encrypt character method
+def encrypt_char(message_char, key_char, mode='encrypt'):
 # Check if the message is alpha and is an uppercase letter
         # Define as "a"
             # Define as "A"
