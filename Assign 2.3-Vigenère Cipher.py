@@ -42,6 +42,12 @@ def encrypt_char(message_char, key_char, mode='encrypt'):
     return message_char
 
 # Implement encrypt method
+def encrypt(message, key):
+    encrypted = ''
+    padded_key = pad_key(message, key)
+    for message_char, key_char in zip(message, padded_key):
+        encrypted += encrypt_char(message_char, key_char)
+    return encrypted
 # Ask the user to input a message and key to encrypt
 # Import module
 # Format massage and key
