@@ -34,6 +34,8 @@ def encrypt_char(message_char, key_char, mode='encrypt'):
 # Find the  position of the key's char in alphabet
         key_position = ord(key_char.lower()) - ord('a')
 # Find the new postion of the message 
+        if mode == 'encrypt':
+            new_message_position = (old_message_position + key_position) % 26
         # Return char
     # If not, return message_char
 
