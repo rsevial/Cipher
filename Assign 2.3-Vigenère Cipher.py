@@ -6,6 +6,11 @@ def pad_key(message, key):
 # Variable to store padded key
     padded_key = ""
 # Check the chr if alpha
+    i = 0
+    for chr in message:
+        if chr.isalpha():
+            padded_key += key[i % len(key)]
+            i += 1
         # Else, ignore and append as empty
     # Return padded_key          
 
