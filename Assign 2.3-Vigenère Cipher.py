@@ -55,5 +55,7 @@ encrypted_message = encrypt(message, key)
 # Import module
 import fontstyle
 # Format massage and key
+message_color = fontstyle.apply(message, 'BLUE/WHITE_BG')
+encrypted_message_color = fontstyle.apply(encrypted_message, 'BLUE/WHITE_BG')
 # Print the output with color
 
