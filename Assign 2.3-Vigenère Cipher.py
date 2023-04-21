@@ -12,7 +12,9 @@ def pad_key(message, key):
             padded_key += key[i % len(key)]
             i += 1
         # Else, ignore and append as empty
-    # Return padded_key          
+        else:
+            padded_key += ' '
+    # Return padded_key                
 
 # Implement encrypt character method
 # Check if the message is alpha and is an uppercase letter
