@@ -2,7 +2,9 @@
 # Problem 3: Vigenère Cipher
 
 # Implementing keypadding method
+def pad_key(message, key):
 # Variable to store padded key
+    padded_key = ""
 # Check the chr if alpha
         # Else, ignore and append as empty
     # Return padded_key          
