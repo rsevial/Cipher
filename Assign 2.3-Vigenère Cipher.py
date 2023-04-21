@@ -49,6 +49,9 @@ def encrypt(message, key):
         encrypted += encrypt_char(message_char, key_char)
     return encrypted
 # Ask the user to input a message and key to encrypt
+message = input("Enter a message in uppercase letter with no spaces:")
+key = input("Enter a keyword in uppercase letter with no spaces:")
+encrypted_message = encrypt(message, key)
 # Import module
 # Format massage and key
 # Print the output with color
